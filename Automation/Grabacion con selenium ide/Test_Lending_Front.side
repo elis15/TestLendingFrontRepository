@@ -1,0 +1,59 @@
+{
+  "id": "54964dbc-5cb3-4b20-be42-ec73a8d6a690",
+  "version": "2.0",
+  "name": "Test_Lending_Front",
+  "url": "https://www.google.com.co",
+  "tests": [{
+    "id": "6fa30591-5037-4303-b1d4-619f79d3e57d",
+    "name": "consultGoogle",
+    "commands": [{
+      "id": "50538a2d-7fd2-42a1-b145-bb57ff6e6e00",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23826bd6-0690-4f47-a56d-7ffbe335bd05",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1734x1392",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4af96eb-febe-477f-9e14-f94c7b3d9084",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "LendingFront"
+    }, {
+      "id": "d42d647e-2b98-4f62-ada9-8329c842e5fd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "87c97f1c-f6b0-405b-920c-53963495f1ab",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6fa30591-5037-4303-b1d4-619f79d3e57d"]
+  }],
+  "urls": ["https://www.google.com.co/"],
+  "plugins": []
+}
